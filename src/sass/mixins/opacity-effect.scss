@@ -1,0 +1,12 @@
+@mixin opaсity-effect($normal: 1, $hover: 0.6, $active: 0.3) {
+  opacity: $normal;
+  transition: opacity 0.1s;  
+
+  &:hover {
+    opacity: $hover;
+	}
+
+	 &:active {
+    opacity: $active;
+	}
+}

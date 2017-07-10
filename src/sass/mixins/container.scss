@@ -1,0 +1,22 @@
+@mixin container() {
+  width: 280px;
+  margin: 0 auto;
+
+  @media #{$tablet-width} {
+    width: 660px;
+  }
+
+  @media #{$desktop-width} {
+    width: 1040px;
+  }
+}
+
+@mixin container-fluid {
+  // width: auto;
+
+  // @media ($tablet-width) {
+    width: 85%;
+    max-width: 1632px;
+    margin: 0 auto;
+  // }
+}

@@ -1,0 +1,35 @@
+.header {
+	@include container-fluid;
+	margin-bottom: 7%;	
+	margin-top: 8%
+}
+
+.header__title {
+	@include font-accent(30px, 36px);	
+	margin-bottom: 10px;
+}
+
+.header__subtitle {
+	display: block;	
+  margin-bottom: 8px;	
+  padding-left: 5px;	
+	@include font(16px, 16px);		
+}
+
+
+
+.header__email {
+	@include font(13px, 13px);		
+  padding-left: 5px;	
+}
+
+@media #{$tablet-width} {
+	.header {
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		margin-bottom: 4%;
+		margin-top: 5%;	
+
+	}
+}

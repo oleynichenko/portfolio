@@ -1,0 +1,16 @@
+@mixin font ($size: 16px, $lh: 1, $weight: normal, $color: #000,  $letter-spacing: normal) {
+	font-size: $size;
+	color: $color;
+	font-weight: $weight;
+	line-height: $lh;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin font-accent ($size: 18px, $lh: 1, $weight: normal, $color: #000, $letter-spacing: normal) {
+  font-family: 'PT Serif', serif;
+	font-size: $size;
+	color: $color;
+	font-weight: $weight;
+	line-height: $lh;
+  letter-spacing: $letter-spacing;
+}

@@ -1,0 +1,58 @@
+.btn__switch {
+  width: 54px;
+  height: 54px;
+
+  border-radius: 50%;
+
+  background-color: rgba(255, 198, 0, 0.5);
+
+  transition: background-color 0.3s;
+  outline: none;
+
+  &:hover {
+    background-color: rgba(255, 198, 0, 1);
+  }
+  
+  &:active {
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 26px;
+    height: 2px;
+
+    margin: auto;
+
+    background-color: #fff;
+    transition: transform 0.3s;
+  } 
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before, 
+  &:active::after {
+    opacity: 0.3;
+  }
+
+  &:hover::before {
+    transform: rotate(135deg);
+  }
+
+  &:hover::after {
+    transform: rotate(45deg);
+  }
+}

@@ -1,0 +1,44 @@
+@mixin btn-inclined-lines($border-color: #000, $border-color-hover: #000, $lines-color: #000, $color-active: rgba(#000, 0.7)) {
+	@include btn;
+
+	position: relative;
+	z-index: 2;
+
+	box-sizing: border-box;
+	overflow: hidden;
+
+	padding: 10px;
+	border: 1px solid $border-color;	
+  
+  text-transform: uppercase;
+
+  &::after {
+  	@include pseudo;
+  	top: 50%;
+  	left: 50%;
+
+  	height: 0%;
+  	width: 150%; 
+
+		border: 2px solid $lines-color;
+
+		opacity: 0;
+		transform: translateY(-50%) translateX(-50%) rotate(25deg);		
+		transition: all 1s;
+
+		z-index: 1;
+  }
+
+	&:hover {
+		border-color: $border-color-hover;
+	}
+
+	&:active {
+		color: rgba(#000, 0.7);
+	}
+
+	&:hover::after {
+		height: 300%;
+		opacity: 1;
+	}
+}
