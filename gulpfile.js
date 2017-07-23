@@ -109,11 +109,16 @@ gulp.task("copy-portfolio", function() {
  return gulp.src([
    "build/**/*.*"
    ])
- .pipe(gulp.dest("../oleynichenko.github.io/device"));
+ .pipe(gulp.dest("../oleynichenko.github.io"));
 });
 
 gulp.task("clean-portfolio", function() {
-  return del(["../oleynichenko.github.io/device/**", "!../oleynichenko.github.io/device"], {force: true});
+  return del(["../oleynichenko.github.io/**",
+   "!../oleynichenko.github.io",
+   "!../oleynichenko.github.io/device",
+   "!../oleynichenko.github.io/device/**",
+   "!../oleynichenko.github.io/barbershop/",
+   "!../oleynichenko.github.io/barbershop/**"], {force: true});
 });
 
 gulp.task("build-portfolio", function(fn) {
