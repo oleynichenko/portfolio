@@ -38,10 +38,12 @@
 
 @media #{$tablet-width} {
 	.description {
-		margin-bottom: 5%;
+		margin-bottom: 4%;
 	}
 	.description__block {	
 		width: 400px;
+		
+		margin-bottom: 0;
 		margin-right: 50px;
 	}
 }

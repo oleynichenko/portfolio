@@ -58,19 +58,6 @@ gulp.task("run-src", function(fn) {
 
 // сборка
 
-gulp.task("style-build", function() {
-  gulp.src("build/css/style.css")
-    .pipe(postcss([
-      mqpacker({
-        sort: true
-        })
-    ]))
-    .pipe(gulp.dest("build/css"))
-    .pipe(minify())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
-});
-
 gulp.task("images", function() {
   gulp.src("build/img/**/*.{png,jpg,gif}")
     .pipe(imagemin([
@@ -100,7 +87,7 @@ gulp.task("clean", function() {
 });
 
 gulp.task("run-build", function(fn) {
-  run("clean", "copy", "style-build", "images", "generate-favicon", "inject-favicon-markups", fn);
+  run("clean", "pug", "style", "copy" "images", "generate-favicon", "inject-favicon-markups", fn);
 });
 
 // Копирование для Портфолио
