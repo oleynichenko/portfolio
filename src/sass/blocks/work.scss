@@ -147,6 +147,11 @@
 			background-color: rgba(#ffe27f, 0.95);
 			color: #000;
 		}
+
+		&--pixel {
+			background-color: rgba(#b3cfd0, 0.95);
+			color: #000;
+		}
 	}
 
 	.work__content:hover .work__cover {
@@ -198,6 +203,12 @@
 		&--pilates {
 			&::after {
 				border-color: #ecddfc; 
+			}
+		}
+
+		&--pixel {
+			&::after {
+				border-color: #fff; 
 			}
 		}
 	}

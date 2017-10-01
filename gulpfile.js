@@ -87,7 +87,7 @@ gulp.task("clean", function() {
 });
 
 gulp.task("run-build", function(fn) {
-  run("clean", "pug", "style", "copy" "images", "generate-favicon", "inject-favicon-markups", fn);
+  run("clean", "pug", "style", "copy", "images", "generate-favicon", "inject-favicon-markups", fn);
 });
 
 // Копирование для Портфолио
@@ -104,6 +104,10 @@ gulp.task("clean-portfolio", function() {
    "!../oleynichenko.github.io",
    "!../oleynichenko.github.io/device",
    "!../oleynichenko.github.io/device/**",
+   "!../oleynichenko.github.io/resume",
+   "!../oleynichenko.github.io/resume/**",
+   "!../oleynichenko.github.io/pixel-hunter",
+   "!../oleynichenko.github.io/pixel-hunter/**",
    "!../oleynichenko.github.io/barbershop/",
    "!../oleynichenko.github.io/barbershop/**"], {force: true});
 });
