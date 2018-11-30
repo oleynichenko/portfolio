@@ -1,3 +1,21 @@
+$brb-color: #000;
+$brb-color-light: #F2F2F2;
+
+$azbyka-color: #6E4B0B;
+$azbyka-color-light: #FFF6E5;
+
+$device-color: #ffe27f;
+$device-color-dark: #665A32;
+
+$pilates-color: #c7ade9;
+$pilates-color-dark: #40374B;
+
+$pixel-color: #b3cfd0;
+$pixel-color-dark: #475252;
+
+$tests-color: #d80033;
+$tests-color-dark: #621527;
+
 .work {
 	margin-bottom: 20%;
 }
@@ -72,33 +90,42 @@
 
 	margin: 8px 7px;
 
+	&:hover {
+		transition: border-color 0.7s;
+	}
+
 	&--brb {
 		&::after {
-			border-color: rgba(#000, 0.7); 
+			border-color: $brb-color; 
 		}			
 	}
 
 	&--device {
 		&::after {
-			border-color: #ffd200; 
+			border-color: $device-color; 
 		}			
 	}
 
 	&--pilates {
 		&::after {
-			border-color: #c7ade9; 
+			border-color: $pilates-color; 
 		}
 	}
 
 	&--pixel {
 		&::after {
-			border-color: #b3cfd0;
+			border-color: $pixel-color;
 		}
 	}
 
 	&--tests {
 		&::after {
-			border-color: #d80033; 
+			border-color: $tests-color; 
+		}
+	}
+	&--azbyka {
+		&::after {
+			border-color: $azbyka-color; 
 		}
 	}
 }
@@ -147,28 +174,33 @@
 		cursor: default;
 
 		&--pilates {
-			background-color: rgba(#c7ade9, 0.85);
-			color: #000;
+			background-color: rgba($pilates-color, 0.85);
+			color: $pilates-color-dark;
 		}
 
 		&--brb {
-			background-color: rgba(#000, 0.85);
-			color: #fff;
+			background-color: rgba($brb-color, 0.85);
+			color: $brb-color-light;
 		}
 
 		&--device {
-			background-color: rgba(#ffe27f, 0.95);
-			color: #000;
+			background-color: rgba($device-color, 0.95);
+			color: $device-color-dark;
 		}
 
 		&--pixel {
-			background-color: rgba(#b3cfd0, 0.95);
-			color: #000;
+			background-color: rgba($pixel-color, 0.95);
+			color: $pixel-color-dark;
 		}
 
 		&--tests {
-			background-color: rgba(#d80033, 0.95);
-			color: #000;
+			background-color: rgba($tests-color, 0.95);
+			color: $tests-color-dark;
+		}
+
+		&--azbyka {
+			background-color: rgba($azbyka-color, 0.95);
+			color: $azbyka-color-light;
 		}
 	}
 
@@ -196,43 +228,80 @@
 	.work__btn {
 		margin: 0;
 
+		&:active {
+			color: inherit;
+			opacity: 0.7;
+		}
+
 		&--brb {
-			border-color: rgba(#fff, 0.85);
+			border-color: rgba($brb-color-light, 0.85);
 			
 			&:hover {
-				border-color: #fff;
-			}
-
-			&:active {
-				color: rgba(#fff, 0.7);
+				border-color: $brb-color-light;
 			}
 
 			&::after {
-				border-color: #fff; 
+				border-color: $brb-color-light; 
 			}			
 		}
 
 		&--device {
+			border-color: rgba($device-color-dark, 0.70);
+			
+			&:hover {
+				border-color: $device-color-dark;
+			}
+
 			&::after {
-				border-color: #fff; 
-			}			
+				border-color: $device-color-dark; 
+			}
 		}
 
 		&--pilates {
+			border-color: rgba($pilates-color-dark, 0.70);
+			
+			&:hover {
+				border-color: $pilates-color-dark;
+			}
+
 			&::after {
-				border-color: #fff; 
+				border-color: $pilates-color-dark; 
 			}
 		}
 
 		&--pixel {
+			border-color: rgba($pixel-color-dark, 0.70);
+			
+			&:hover {
+				border-color: $pixel-color-dark;
+			}
+
 			&::after {
-				border-color: #fff; 
+				border-color: $pixel-color-dark; 
 			}
 		}
 
 		&--tests {
+			border-color: rgba($tests-color-dark, 0.70);
+			
+			&:hover {
+				border-color: $tests-color-dark;
+			}
+
 			&::after {
-				border-color: #fff; 
+				border-color: $tests-color-dark; 
+			}
+		}
+
+		&--azbyka {
+			border-color: rgba($azbyka-color-light, 0.70);
+			
+			&:hover {
+				border-color: $azbyka-color-light;
+			}
+
+			&::after {
+				border-color: $azbyka-color-light; 
 			}
 		}
 	}
