@@ -13,8 +13,26 @@ $pilates-color-dark: #40374B;
 $pixel-color: #b3cfd0;
 $pixel-color-dark: #475252;
 
-$tests-color: #d80033;
+$tests-color: #e4476c;
 $tests-color-dark: #621527;
+
+$chat-color: #276b82;
+$chat-color-light: #dce8ec;
+
+$typing-color: #8b9a62;
+$typing-color-dark: #2a2b25;
+
+$todo-color: #695EB8;
+$todo-color-light: #E6E2FF;
+
+$fitness-color: #3f51b5;
+$fitness-color-light: #e8eaf9;
+
+$recipe-color: #e7e7e7;
+$recipe-color-dark: #2f2828;
+
+$slider-color: #ebdcff;
+$slider-color-dark: #35303c;
 
 .work {
 	margin-bottom: 20%;
@@ -34,6 +52,7 @@ $tests-color-dark: #621527;
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
+	letter-spacing: 0.5px;
 }
 
 .work__photo {
@@ -72,6 +91,10 @@ $tests-color-dark: #621527;
 	list-style: circle;
 }
 
+.work__feature {
+	margin-bottom: 2px;
+}
+
 .work__btns {
 	display: flex;
 	flex-wrap: wrap;
@@ -85,7 +108,7 @@ $tests-color-dark: #621527;
 .work__btn {
 	@include btn-inclined-lines(rgba(#000, 0.4));
 	@include font(10px, 1, normal, inherit);
-
+	letter-spacing: 0.5px;
 	width: 120px;
 
 	margin: 8px 7px;
@@ -128,6 +151,41 @@ $tests-color-dark: #621527;
 			border-color: $azbyka-color; 
 		}
 	}
+	&--chat {
+		&::after {
+			border-color: $chat-color; 
+		}
+	}
+
+	&--typing {
+		&::after {
+			border-color: $typing-color; 
+		}
+	}
+
+	&--todo {
+		&::after {
+			border-color: $todo-color; 
+		}
+	}
+
+	&--fitness {
+		&::after {
+			border-color: $fitness-color; 
+		}
+	}
+
+	&--recipe {
+		&::after {
+			border-color: $recipe-color; 
+		}
+	}
+
+	&--slider {
+		&::after {
+			border-color: $slider-color; 
+		}
+	}
 }
 
 @media #{$tablet-width} {
@@ -137,8 +195,6 @@ $tests-color-dark: #621527;
 
 	.work__title {
 		order: 2;
-
-		margin-bottom: 10px;
 
 		@include font-accent(18px, 22px);
 		cursor: default;
@@ -201,6 +257,36 @@ $tests-color-dark: #621527;
 		&--azbyka {
 			background-color: rgba($azbyka-color, 0.95);
 			color: $azbyka-color-light;
+		}
+
+		&--chat {
+			background-color: rgba($chat-color, 0.95);
+			color: $chat-color-light;
+		}
+
+		&--typing {
+			background-color: rgba($typing-color, 0.95);
+			color: $typing-color-dark;
+		}
+
+		&--todo {
+			background-color: rgba($todo-color, 0.95);
+			color: $todo-color-light;
+		}
+
+		&--fitness {
+			background-color: rgba($fitness-color, 0.95);
+			color: $fitness-color-light;
+		}
+
+		&--recipe {
+			background-color: rgba($recipe-color, 0.95);
+			color: $recipe-color-dark;
+		}
+
+		&--slider {
+			background-color: rgba($slider-color, 0.95);
+			color: $slider-color-dark;
 		}
 	}
 
@@ -302,6 +388,78 @@ $tests-color-dark: #621527;
 
 			&::after {
 				border-color: $azbyka-color-light; 
+			}
+		}
+
+		&--chat {
+			border-color: rgba($chat-color-light, 0.70);
+			
+			&:hover {
+				border-color: $chat-color-light;
+			}
+
+			&::after {
+				border-color: $chat-color-light; 
+			}
+		}
+
+		&--typing {
+			border-color: rgba($typing-color-dark, 0.70);
+			
+			&:hover {
+				border-color: $typing-color-dark;
+			}
+
+			&::after {
+				border-color: $typing-color-dark; 
+			}
+		}
+
+		&--todo {
+			border-color: rgba($todo-color-light, 0.70);
+			
+			&:hover {
+				border-color: $todo-color-light;
+			}
+
+			&::after {
+				border-color: $todo-color-light; 
+			}
+		}
+
+		&--fitness {
+			border-color: rgba($fitness-color-light, 0.70);
+			
+			&:hover {
+				border-color: $fitness-color-light;
+			}
+
+			&::after {
+				border-color: $fitness-color-light; 
+			}
+		}
+
+		&--recipe {
+			border-color: rgba($recipe-color-dark, 0.70);
+			
+			&:hover {
+				border-color: $recipe-color-dark;
+			}
+
+			&::after {
+				border-color: $recipe-color-dark; 
+			}
+		}
+
+		&--slider {
+			border-color: rgba($slider-color-dark, 0.70);
+			
+			&:hover {
+				border-color: $slider-color-dark;
+			}
+
+			&::after {
+				border-color: $slider-color-dark; 
 			}
 		}
 	}

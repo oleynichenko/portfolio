@@ -5,23 +5,23 @@
 }
 
 .header__title {
-	@include font-accent(30px, 33px);	
-	margin-bottom: 15px;
+	@include font-accent(36px, 42px);	
+	margin-bottom: 8px;
 }
 
 .header__subtitle {
 	display: block;	
-  margin-bottom: 10px;	
-  padding-left: 5px;	
-	@include font(16px, 16px);		
+	margin-bottom: 26px;	
+	padding-left: 5px;	
+	@include font(24px, 30px);		
 }
 
 .header__email {
 	display: block;
-	@include font(13px, 13px);	
+	@include font(16px, 20px);	
 
-  padding-left: 5px;	
-  padding-bottom: 10px;
+	padding-left: 5px;	
+	padding-bottom: 10px;
 }
 
 @media #{$tablet-width} {
