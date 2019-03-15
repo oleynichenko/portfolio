@@ -34,6 +34,12 @@ $recipe-color-dark: #2f2828;
 $slider-color: #ebdcff;
 $slider-color-dark: #35303c;
 
+$words-color: #303030;
+$words-color-light: #F2F2F2;
+
+$time-color: #527a51;
+$time-color-light: #dff6de;
+
 .work {
 	margin-bottom: 20%;
 }
@@ -186,6 +192,18 @@ $slider-color-dark: #35303c;
 			border-color: $slider-color; 
 		}
 	}
+
+	&--words{
+		&::after {
+			border-color: $words-color;
+		}
+	}
+
+	&--time {
+		&::after {
+			border-color: $time-color;
+		}
+	}
 }
 
 @media #{$tablet-width} {
@@ -287,6 +305,16 @@ $slider-color-dark: #35303c;
 		&--slider {
 			background-color: rgba($slider-color, 0.95);
 			color: $slider-color-dark;
+		}
+
+		&--words {
+			background-color: rgba($words-color, 0.95);
+			color: $words-color-light;
+		}
+
+		&--time {
+			background-color: rgba($time-color, 0.95);
+			color: $time-color-light;
 		}
 	}
 
@@ -461,6 +489,30 @@ $slider-color-dark: #35303c;
 
 			&::after {
 				border-color: $slider-color-dark; 
+			}
+		}
+
+		&--words {
+			border-color: rgba($words-color-light, 0.70);
+
+			&:hover {
+				border-color: $words-color-light;
+			}
+
+			&::after {
+				border-color: $words-color-light;
+			}
+		}
+
+		&--time {
+			border-color: rgba($time-color-light, 0.70);
+
+			&:hover {
+				border-color: $time-color-light;
+			}
+
+			&::after {
+				border-color: $time-color-light;
 			}
 		}
 	}
