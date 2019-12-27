@@ -16,6 +16,9 @@ $pixel-color-dark: #475252;
 $tests-color: #e4476c;
 $tests-color-dark: #621527;
 
+$jbook-color: #673bb7;
+$jbook-color-light: #ded8e8;
+
 $chat-color: #276b82;
 $chat-color-light: #dce8ec;
 
@@ -152,6 +155,12 @@ $time-color-light: #dff6de;
 			border-color: $tests-color; 
 		}
 	}
+
+	&--jbook{
+		&::after {
+			border-color: $jbook-color;
+		}
+	}
 	&--azbyka {
 		&::after {
 			border-color: $azbyka-color; 
@@ -270,6 +279,11 @@ $time-color-light: #dff6de;
 		&--tests {
 			background-color: rgba($tests-color, 0.95);
 			color: $tests-color-dark;
+		}
+
+		&--jbook {
+			background-color: rgba($jbook-color, 0.95);
+			color: $jbook-color-light;
 		}
 
 		&--azbyka {
@@ -405,6 +419,18 @@ $time-color-light: #dff6de;
 
 			&::after {
 				border-color: $tests-color-dark; 
+			}
+		}
+
+		&--jbook{
+			border-color: rgba($jbook-color-light, 0.70);
+
+			&:hover {
+				border-color: $jbook-color-light;
+			}
+
+			&::after {
+				border-color: $jbook-color-light;
 			}
 		}
 
