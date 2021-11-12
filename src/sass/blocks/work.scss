@@ -1,6 +1,9 @@
 $brb-color: #000;
 $brb-color-light: #F2F2F2;
 
+$daat-color: #000;
+$daat-color-light: #F2F2F2;
+
 $azbyka-color: #6E4B0B;
 $azbyka-color-light: #FFF6E5;
 
@@ -71,7 +74,7 @@ $time-color-light: #dff6de;
 
 .work__photo img {
 	display: block;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 
 .work__cover {
@@ -109,7 +112,7 @@ $time-color-light: #dff6de;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	flex-grow: 2;
-	
+
 	width: 134px;
 	text-align: center;
 }
@@ -128,19 +131,25 @@ $time-color-light: #dff6de;
 
 	&--brb {
 		&::after {
-			border-color: $brb-color; 
-		}			
+			border-color: $brb-color;
+		}
+	}
+
+	&--daat {
+		&::after {
+			border-color: $daat-color;
+		}
 	}
 
 	&--device {
 		&::after {
-			border-color: $device-color; 
-		}			
+			border-color: $device-color;
+		}
 	}
 
 	&--pilates {
 		&::after {
-			border-color: $pilates-color; 
+			border-color: $pilates-color;
 		}
 	}
 
@@ -152,7 +161,7 @@ $time-color-light: #dff6de;
 
 	&--tests {
 		&::after {
-			border-color: $tests-color; 
+			border-color: $tests-color;
 		}
 	}
 
@@ -163,42 +172,42 @@ $time-color-light: #dff6de;
 	}
 	&--azbyka {
 		&::after {
-			border-color: $azbyka-color; 
+			border-color: $azbyka-color;
 		}
 	}
 	&--chat {
 		&::after {
-			border-color: $chat-color; 
+			border-color: $chat-color;
 		}
 	}
 
 	&--typing {
 		&::after {
-			border-color: $typing-color; 
+			border-color: $typing-color;
 		}
 	}
 
 	&--todo {
 		&::after {
-			border-color: $todo-color; 
+			border-color: $todo-color;
 		}
 	}
 
 	&--fitness {
 		&::after {
-			border-color: $fitness-color; 
+			border-color: $fitness-color;
 		}
 	}
 
 	&--recipe {
 		&::after {
-			border-color: $recipe-color; 
+			border-color: $recipe-color;
 		}
 	}
 
 	&--slider {
 		&::after {
-			border-color: $slider-color; 
+			border-color: $slider-color;
 		}
 	}
 
@@ -236,7 +245,7 @@ $time-color-light: #dff6de;
 		position: relative;
 		margin-bottom: 20px;
 	}
-	
+
 	.work__photo {
 		margin: 0;
 	}
@@ -264,6 +273,11 @@ $time-color-light: #dff6de;
 		&--brb {
 			background-color: rgba($brb-color, 0.85);
 			color: $brb-color-light;
+		}
+
+		&--daat {
+			background-color: rgba($daat-color, 0.85);
+			color: $daat-color-light;
 		}
 
 		&--device {
@@ -342,7 +356,7 @@ $time-color-light: #dff6de;
 
 	.work__cover-content {
 		margin-bottom: 4%;
-		width: 100%;	
+		width: 100%;
 	}
 
 	.work__features {
@@ -364,61 +378,73 @@ $time-color-light: #dff6de;
 
 		&--brb {
 			border-color: rgba($brb-color-light, 0.85);
-			
+
 			&:hover {
 				border-color: $brb-color-light;
 			}
 
 			&::after {
-				border-color: $brb-color-light; 
-			}			
+				border-color: $brb-color-light;
+			}
+		}
+
+		&--daat {
+			border-color: rgba($daat-color-light, 0.85);
+
+			&:hover {
+				border-color: $daat-color-light;
+			}
+
+			&::after {
+				border-color: $daat-color-light;
+			}
 		}
 
 		&--device {
 			border-color: rgba($device-color-dark, 0.70);
-			
+
 			&:hover {
 				border-color: $device-color-dark;
 			}
 
 			&::after {
-				border-color: $device-color-dark; 
+				border-color: $device-color-dark;
 			}
 		}
 
 		&--pilates {
 			border-color: rgba($pilates-color-dark, 0.70);
-			
+
 			&:hover {
 				border-color: $pilates-color-dark;
 			}
 
 			&::after {
-				border-color: $pilates-color-dark; 
+				border-color: $pilates-color-dark;
 			}
 		}
 
 		&--pixel {
 			border-color: rgba($pixel-color-dark, 0.70);
-			
+
 			&:hover {
 				border-color: $pixel-color-dark;
 			}
 
 			&::after {
-				border-color: $pixel-color-dark; 
+				border-color: $pixel-color-dark;
 			}
 		}
 
 		&--tests {
 			border-color: rgba($tests-color-dark, 0.70);
-			
+
 			&:hover {
 				border-color: $tests-color-dark;
 			}
 
 			&::after {
-				border-color: $tests-color-dark; 
+				border-color: $tests-color-dark;
 			}
 		}
 
@@ -436,85 +462,85 @@ $time-color-light: #dff6de;
 
 		&--azbyka {
 			border-color: rgba($azbyka-color-light, 0.70);
-			
+
 			&:hover {
 				border-color: $azbyka-color-light;
 			}
 
 			&::after {
-				border-color: $azbyka-color-light; 
+				border-color: $azbyka-color-light;
 			}
 		}
 
 		&--chat {
 			border-color: rgba($chat-color-light, 0.70);
-			
+
 			&:hover {
 				border-color: $chat-color-light;
 			}
 
 			&::after {
-				border-color: $chat-color-light; 
+				border-color: $chat-color-light;
 			}
 		}
 
 		&--typing {
 			border-color: rgba($typing-color-dark, 0.70);
-			
+
 			&:hover {
 				border-color: $typing-color-dark;
 			}
 
 			&::after {
-				border-color: $typing-color-dark; 
+				border-color: $typing-color-dark;
 			}
 		}
 
 		&--todo {
 			border-color: rgba($todo-color-light, 0.70);
-			
+
 			&:hover {
 				border-color: $todo-color-light;
 			}
 
 			&::after {
-				border-color: $todo-color-light; 
+				border-color: $todo-color-light;
 			}
 		}
 
 		&--fitness {
 			border-color: rgba($fitness-color-light, 0.70);
-			
+
 			&:hover {
 				border-color: $fitness-color-light;
 			}
 
 			&::after {
-				border-color: $fitness-color-light; 
+				border-color: $fitness-color-light;
 			}
 		}
 
 		&--recipe {
 			border-color: rgba($recipe-color-dark, 0.70);
-			
+
 			&:hover {
 				border-color: $recipe-color-dark;
 			}
 
 			&::after {
-				border-color: $recipe-color-dark; 
+				border-color: $recipe-color-dark;
 			}
 		}
 
 		&--slider {
 			border-color: rgba($slider-color-dark, 0.70);
-			
+
 			&:hover {
 				border-color: $slider-color-dark;
 			}
 
 			&::after {
-				border-color: $slider-color-dark; 
+				border-color: $slider-color-dark;
 			}
 		}
 
@@ -555,7 +581,7 @@ $time-color-light: #dff6de;
 	}
 
 	.work__tags {
-		margin-bottom: 0px;
+		margin-bottom: 0;
 	}
 
 	.work__cover {
@@ -566,7 +592,7 @@ $time-color-light: #dff6de;
 		@include font(18px, 1, normal, inherit);
 		margin-bottom: 3%;
 	}
-	
+
 	.work__features {
 		height: 120px;
 		@include font(14px, 20px, normal, inherit);
